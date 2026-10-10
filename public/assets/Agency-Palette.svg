@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1010" viewBox="0 0 1440 1010">
+ <defs>
+  <linearGradient id="cta" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#E4FFB6"/><stop offset="1" stop-color="#BDE788"/></linearGradient>
+  <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#EDF9DF" stop-opacity="0.070588"/><stop offset="0.37" stop-color="#151B15" stop-opacity="0.349020"/><stop offset="1" stop-color="#080E0B" stop-opacity="0.568627"/></linearGradient>
+ </defs>
+ <rect width="1440" height="1010" fill="#080B09"/>
+ <g font-family="DejaVu Sans,Arial,sans-serif">
+  <text x="64" y="67" fill="#AAB59F" font-size="15" letter-spacing="3">STUDIO / WEBSITE DESIGN</text>
+  <text x="64" y="125" fill="#F1F4EE" font-size="42">Color palette</text>
+  <text x="1376" y="120" fill="#AAB59F" font-size="17" text-anchor="end">From the approved V4 design</text>
+  <g transform="translate(64 175)">
+   <rect width="310" height="116" rx="13" fill="#080B09" stroke="#E4F4D4" stroke-opacity="0.18"/>
+   <text y="150" fill="#F1F4EE" font-size="18">Page background</text><text y="184" fill="#AAB59F" font-size="24">#080B09</text>
+  </g>
+  <g transform="translate(398 175)">
+   <rect width="310" height="116" rx="13" fill="#131915" stroke="#E4F4D4" stroke-opacity="0.18"/>
+   <text y="150" fill="#F1F4EE" font-size="18">Base surface</text><text y="184" fill="#AAB59F" font-size="24">#131915</text>
+  </g>
+  <g transform="translate(732 175)">
+   <rect width="310" height="116" rx="13" fill="#D5F698"/>
+   <text y="150" fill="#F1F4EE" font-size="18">Lime accent</text><text y="184" fill="#AAB59F" font-size="24">#D5F698</text>
+  </g>
+  <g transform="translate(1066 175)">
+   <rect width="310" height="116" rx="13" fill="#D8EFA9"/>
+   <text y="150" fill="#F1F4EE" font-size="18">Hero accent text</text><text y="184" fill="#AAB59F" font-size="24">#D8EFA9</text>
+  </g>
+  <g transform="translate(64 400)">
+   <rect width="310" height="116" rx="13" fill="#F1F4EE"/>
+   <text y="150" fill="#F1F4EE" font-size="18">Primary text</text><text y="184" fill="#AAB59F" font-size="24">#F1F4EE</text>
+  </g>
+  <g transform="translate(398 400)">
+   <rect width="310" height="116" rx="13" fill="#B4BDB1"/>
+   <text y="150" fill="#F1F4EE" font-size="18">Service body text</text><text y="184" fill="#AAB59F" font-size="24">#B4BDB1</text>
+  </g>
+  <g transform="translate(732 400)">
+   <rect width="310" height="116" rx="13" fill="#AAB59F"/>
+   <text y="150" fill="#F1F4EE" font-size="18">Examples / supporting text</text><text y="184" fill="#AAB59F" font-size="24">#AAB59F</text>
+  </g>
+  <g transform="translate(1066 400)">
+   <rect width="310" height="116" rx="13" fill="#A6AFA6"/>
+   <text y="150" fill="#F1F4EE" font-size="18">Default muted text</text><text y="184" fill="#AAB59F" font-size="24">#A6AFA6</text>
+  </g>
+  <path d="M64 636H1376" stroke="#E4F4D4" stroke-opacity="0.12"/>
+  <g transform="translate(64 675)">
+   <text y="0" fill="#F1F4EE" font-size="22">Primary button</text>
+   <rect y="26" width="644" height="89" rx="18" fill="url(#cta)"/>
+   <text x="322" y="82" text-anchor="middle" fill="#182311" font-size="24">Start a project</text>
+   <text y="149" fill="#B4BDB1" font-size="18">#E4FFB6 → #BDE788 · 125° gradient</text>
+   <text y="181" fill="#AAB59F" font-size="16">Button text: #182311</text>
+  </g>
+  <g transform="translate(732 675)">
+   <text y="0" fill="#F1F4EE" font-size="22">Glass material</text>
+   <rect y="26" width="644" height="89" rx="18" fill="#0E170C"/>
+   <rect y="26" width="644" height="89" rx="18" fill="url(#glass)" stroke="#E4F4D4" stroke-opacity="0.180392"/>
+   <text x="322" y="82" text-anchor="middle" fill="#F1F4EE" font-size="24">Translucent, layered surfaces</text>
+   <text y="149" fill="#B4BDB1" font-size="16">#EDF9DF12 → #151B1559 → #080E0B91</text>
+   <text y="181" fill="#AAB59F" font-size="16">Border: #E4F4D42E · Blur: 16px · Saturation: 115%</text>
+  </g>
+  <text x="64" y="952" fill="#AAB59F" font-size="16">Eight-digit HEX values include alpha. Glass appearance depends on the artwork behind it.</text>
+ </g>
+</svg>

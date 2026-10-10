@@ -1,0 +1,28 @@
+/* Colors extracted from Agency Design V4. No website files were modified. */
+:root {
+  --agency-background: #080b09;
+  --agency-surface: #131915;
+  --agency-accent: #d5f698;
+  --agency-hero-accent: #d8efa9;
+  --agency-text: #f1f4ee;
+  --agency-body: #b4bdb1;
+  --agency-supporting: #aab59f;
+  --agency-muted: #a6afa6;
+  --agency-line: #ffffff15;
+  --agency-button-text: #182311;
+  --agency-button-background: linear-gradient(125deg, #e4ffb6, #bde788);
+  --agency-glass-background: linear-gradient(138deg, #edf9df12 0%, #151b1559 37%, #080e0b91 100%);
+  --agency-glass-border: #e4f4d42e;
+  --agency-glass-filter: blur(16px) saturate(115%);
+  --agency-glass-shadow: inset 0 1px 0 #f5ffe41a, inset 0 -1px 0 #ffffff05, 0 22px 64px #00000038;
+  --agency-border-highlight: #f0ffdbdd;
+}
+
+/* Reference material; apply to the appropriate components during the build. */
+.agency-glass {
+  background: var(--agency-glass-background);
+  border: 1px solid var(--agency-glass-border);
+  backdrop-filter: var(--agency-glass-filter);
+  -webkit-backdrop-filter: var(--agency-glass-filter);
+  box-shadow: var(--agency-glass-shadow);
+}

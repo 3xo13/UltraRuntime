@@ -1,0 +1,104 @@
+.container {
+  --glass: linear-gradient(138deg, #24312166, #111b1460 40%, #080e0b91);
+  position: relative;
+  isolation: isolate;
+}
+
+.artwork {
+  position: absolute;
+  /* Overlap and feather the artwork, not the content or interactive surfaces. */
+  inset: -64px -4%;
+  pointer-events: none;
+  opacity: 0.42;
+  mask-image:
+    linear-gradient(transparent, #000 18%, #000 78%, transparent),
+    linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent);
+  mask-composite: intersect;
+}
+
+.sculpture {
+  position: absolute;
+  inset: 0;
+  background: center / cover no-repeat;
+  /* Feather before rotation so the image rectangle never becomes a diagonal seam. */
+  mask-image:
+    linear-gradient(transparent, #000 14%, #000 84%, transparent),
+    linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent);
+  mask-composite: intersect;
+}
+
+/* The numbered artwork is composed for these paired sections; preserve its ratio. */
+.sculpture.broad {
+  background-size: min(116vw, 1680px) auto;
+}
+
+.artwork::after {
+  position: absolute;
+  inset: 0;
+  content: "";
+  backdrop-filter: blur(14px);
+  mask-image: radial-gradient(ellipse, transparent 40%, #000 90%);
+}
+
+/* The upper stem exits into the lower, half-turned copy at one shared scale. */
+.outgoing .artwork,
+.incoming .artwork {
+  mask-image:
+    linear-gradient(transparent, #000 8%, #000 92%, transparent),
+    linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent);
+}
+
+.outgoing .sculpture,
+.incoming .sculpture {
+  --sculpture-shift: -50%;
+  width: var(--linked-sculpture-size, 108vw);
+  height: var(--linked-sculpture-size, 108vw);
+  left: 50%;
+  right: auto;
+  mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent);
+}
+
+.outgoing .sculpture {
+  top: auto;
+  bottom: 0;
+}
+
+.incoming .sculpture {
+  top: 0;
+  bottom: auto;
+  left: calc(50% + var(--linked-stem-offset, 100px));
+}
+
+.container :global(.demo:not(.device-demo)),
+.container :global(.browser),
+.container :global(.work-card),
+.container :global(.contact) {
+  background: var(--glass);
+  backdrop-filter: blur(10px) saturate(110%);
+}
+
+.container > :global(.approach) {
+  background: linear-gradient(transparent, #0b110d55 30%, #0b110d55 70%, transparent);
+  backdrop-filter: none;
+}
+
+:global([dir="rtl"]) .artwork {
+  transform: scaleX(-1);
+}
+
+@media (max-width: 590px) {
+  .artwork {
+    opacity: 0.32;
+  }
+
+  .sculpture.broad {
+    background-size: 132vw auto;
+  }
+
+  .container :global(.demo:not(.device-demo)),
+  .container :global(.browser),
+  .container :global(.work-card),
+  .container :global(.contact) {
+    backdrop-filter: blur(8px) saturate(110%);
+  }
+}
